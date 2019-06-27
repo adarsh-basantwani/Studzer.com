@@ -1,0 +1,5 @@
+c:\users\adarsh basantwani\documents\visual studio 2010\Projects\students1\students1\bin\students1.dll
+c:\users\adarsh basantwani\documents\visual studio 2010\Projects\students1\students1\bin\students1.pdb
+c:\users\adarsh basantwani\documents\visual studio 2010\Projects\students1\students1\obj\Debug\students1.dll
+c:\users\adarsh basantwani\documents\visual studio 2010\Projects\students1\students1\obj\Debug\students1.pdb
+C:\Users\Adarsh Basantwani\Documents\Visual Studio 2010\Projects\students1\students1\obj\Debug\students1.csprojResolveAssemblyReference.cache

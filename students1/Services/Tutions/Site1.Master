@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="students1.Services.Tutions.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Room in Amravati, Hostel in Amravati, Amravati, Mess in Amravati, Tution in Amravati, startup, roommate, chat, live discussion, students, online" /><!-- ============ Add custom CSS here ============ -->
+    <link href="../../Styles/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div style="width:100%;background-color:White">
+        <div id="custom-bootstrap-menu" class="navbar navbar-default" role="navigation">
+            <table width="100%"><tr><td align="center"><asp:HyperLink ID="HyperLink14" runat="server" NavigateUrl="~/Index.aspx"><asp:Image ID="Image2" runat="server" Height="100px" Width="120px" ImageUrl="~/images/logo.png" /></asp:HyperLink>
+        </td><td align="right">
+            <div class="collapse navbar-collapse navbar-menubuilder" align="right">
+               <asp:Panel ID="PanelLogin" runat="server">
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Services/Tutions/TutionLogin.aspx" ForeColor="#4782BA">
+                <asp:Label ID="Label1" runat="server" Text="LogIn" Font-Bold="true" Font-Size="Larger"></asp:Label></asp:HyperLink>
+        </asp:Panel>
+        <asp:Panel ID="PanelLogout" runat="server" Visible="false">
+        <table><tr><td>
+            <asp:Label ID="Label2" runat="server" Text="Welcome" ForeColor="#4782BA" Font-Bold="true" Font-Size="Medium"></asp:Label>&nbsp;</td><td>
+            <asp:Label ID="lblName" runat="server" Text="" ForeColor="#4782BA" Font-Bold="true" Font-Size="Medium"></asp:Label></td></tr>
+            <tr><td>
+            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Services/Tutions/Logout.aspx" ForeColor="#4782BA"><asp:Label ID="Label4" runat="server" Font-Size="Medium" Text="LogOut" Font-Bold="true"></asp:Label></asp:HyperLink>
+       </td></tr></table> </asp:Panel>
+       </div>
+            </td></tr></table>
+        <div class="container">
+            <div class="navbar-header">
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+                    <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container" style="background-color:White;width:100%;">
+            <div class="collapse navbar-collapse navbar-menubuilder" align="center">
+                <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Services/Tutions/TutionPanel.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Add Subjects" Value="Add Subjects" NavigateUrl="~/Services/Tutions/AddSubjects.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Add Toppers" Value="Add Toppers" NavigateUrl="~/Services/Tutions/AddToppers.aspx"></asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#4782BA" ForeColor="White" />
+                    <StaticMenuItemStyle Font-Bold="True" Font-Names="Verdana" 
+                        Font-Size="Small" ForeColor="Black" HorizontalPadding="20px" Width="200px" />
+                </asp:Menu>
+               
+            </div>
+        </div>
+    <div style="min-height:100%;">
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
+    </div><br /><br />
+    <div class="panel-footer" style="background-color:Gray;border-top-width:thin">
+  <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2017 <b>studzer.com</b> All Rights Reserved.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><div class="top-number"><p><i class="fa fa-thumbs-up"></i> Keep In Touch </p></div></li>
+                    </ul>
+                    <br />
+                </div>
+            </div>
+        </div>
+        <div class="container">
+    <div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      
+    </div>
+     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <div class="social">
+     <ul class="social-share">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>        
+        <li><a href="#"><i class="fa fa-skype"></i></a></li>
+     </ul>     
+       
+    </div>
+    </div>
+    </div>
+        </div><%--/top-bar--%></footer>
+    </div>             
+    </form>
+</body>
+</html>

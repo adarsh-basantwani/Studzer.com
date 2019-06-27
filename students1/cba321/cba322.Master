@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="cba322.master.cs" Inherits="students1.cba321.cba322" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+       <asp:HyperLink ID="HyperLink14" runat="server" NavigateUrl="~/Index.aspx"><asp:Image ID="Image2" runat="server" Height="100px" Width="100px" ImageUrl="~/images/logo.png" /></asp:HyperLink>
+    </div>
+    <div>
+        <table width="100%" cellspacing="20" >
+            <tr valign="top" >
+            <td style="width:200px;box-shadow:0px 0px 20px green" >
+                <asp:Menu ID="Menu1" runat="server">
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home" ImageUrl="~/cba321/green.png" 
+                            NavigateUrl="~/cba321/Home/Index.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="FeedBack" Value="FeedBack" 
+                            ImageUrl="~/cba321/green.png" NavigateUrl="~/cba321/Home/FeedBack.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Users" Value="Users" 
+                            ImageUrl="~/cba321/green.png" NavigateUrl="~/cba321/Users.aspx"></asp:MenuItem>
+                            <asp:MenuItem ImageUrl="~/cba321/green.png" Text="Comments" 
+                            Value="Comments" NavigateUrl="~/cba321/Comments.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Room Requests" Value="Room Requests" 
+                            ImageUrl="~/cba321/green.png" NavigateUrl="~/cba321/Room/RoomRequests.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Registered Rooms" Value="Registered Rooms" ImageUrl="~/cba321/green.png" NavigateUrl="~/cba321/Room/RegisteredRooms.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Room Bookings" Value="Room Bookings" 
+                            ImageUrl="~/cba321/green.png" NavigateUrl="~/cba321/Room/RoomBooking.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Mess Requests" Value="Mess Requests" 
+                            ImageUrl="~/cba321/green.png" NavigateUrl="~/cba321/Mess/MessRequests.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Registered Mess" Value="Registered Mess" ImageUrl="~/cba321/green.png" NavigateUrl="~/cba321/Mess/RegisteredMess.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Mess Bookings" Value="Mess Bookings" 
+                            ImageUrl="~/cba321/green.png" NavigateUrl="~/cba321/Mess/MessBooking.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Flat Requests" Value="Flat Requests" 
+                            ImageUrl="~/cba321/green.png" NavigateUrl="~/cba321/Flat/FlatRequests.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Registered Flats" Value="Registered Flats" ImageUrl="~/cba321/green.png" NavigateUrl="~/cba321/Flat/RegisteredFlats.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Flat Bookings" Value="Flat Bookings" 
+                            ImageUrl="~/cba321/green.png" NavigateUrl="~/cba321/Flat/FlatBooking.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Hostel Requests" Value="Hostel Requests" 
+                            ImageUrl="~/cba321/green.png" NavigateUrl="~/cba321/Hostel/HostelRequests.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Registered Hostels" Value="Registered Hostels" ImageUrl="~/cba321/green.png" NavigateUrl="~/cba321/Hostel/RegisteredHostels.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Hostel Bookings" Value="Hostel Bookings" 
+                            ImageUrl="~/cba321/green.png" NavigateUrl="~/cba321/Hostel/HostelBooking.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Blogs" Value="Blogs" 
+                            ImageUrl="~/cba321/green.png" NavigateUrl="~/cba321/Blogs/Blogs.aspx"></asp:MenuItem>
+                        <asp:MenuItem ImageUrl="~/cba321/green.png" Text="Mail Tutions" 
+                            Value="Mail Tutions" NavigateUrl="~/cba321/Tution/TutionList.aspx"></asp:MenuItem>
+                            <asp:MenuItem ImageUrl="~/cba321/green.png" Text="Confirm Tutions" 
+                            Value="Confirm Tutions" NavigateUrl="~/cba321/Tution/ConfirmTution.aspx"></asp:MenuItem>
+                        <asp:MenuItem ImageUrl="~/cba321/green.png" Text="Location" 
+                            Value="Location" NavigateUrl="~/cba321/AddLocation.aspx"></asp:MenuItem>
+                        <asp:MenuItem ImageUrl="~/cba321/green.png" Text="Logout" Value="Logout" 
+                            NavigateUrl="~/cba321/Logout.aspx">
+                        </asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#000066" ForeColor="White" />
+                    <StaticMenuItemStyle BackColor="#3333FF" BorderColor="White" 
+                        BorderStyle="Solid" BorderWidth="3px" Font-Bold="True" Font-Names="Verdana" 
+                        Font-Size="Small" ForeColor="#CCCCCC" HorizontalPadding="20px" Width="160px" />
+                </asp:Menu>
+                <hr />
+            
+            
+            </td>
+            <td style="box-shadow:0px 0px 20px green;padding:15px 15px 15px 15px" >
+            
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            
+            </td>
+            </tr>
+        </table>
+    </div>
+    <div class="panel-footer" style="background-color:Gray;border-top-width:thin">
+    
+    </div>
+    </form>
+</body>
+</html>

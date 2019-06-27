@@ -1,0 +1,965 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3DDEFD23-7293-4A9B-B91B-267550FF89F7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>students1</RootNamespace>
+    <AssemblyName>students1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=15.1.2.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="itextsharp, Version=4.1.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutUs.aspx" />
+    <Content Include="Account\ChangePhoto.aspx" />
+    <Content Include="Account\ChangeSecurity.aspx" />
+    <Content Include="Account\Logout.aspx" />
+    <Content Include="Account\MyUploads.aspx" />
+    <Content Include="Account\Notifications.aspx" />
+    <Content Include="Account\PasswordSettings.aspx" />
+    <Content Include="Account\FeedBack.aspx" />
+    <Content Include="Account\ForgotPassword.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Profile.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\UserPanel.aspx" />
+    <Content Include="App_Data\Students.mdf" />
+    <Content Include="App_Data\Students_log.ldf">
+      <DependentUpon>Students.mdf</DependentUpon>
+    </Content>
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="bin\students1.dll" />
+    <Content Include="bin\students1.pdb" />
+    <Content Include="cba321\AddLocation.aspx" />
+    <Content Include="cba321\Blogs\BlogList.aspx" />
+    <Content Include="cba321\Blogs\Blogs.aspx" />
+    <Content Include="cba321\Comments.aspx" />
+    <Content Include="cba321\Flat\FlatBooking.aspx" />
+    <Content Include="cba321\Flat\FlatRequests.aspx" />
+    <Content Include="cba321\Flat\RegisteredFlats.aspx" />
+    <Content Include="cba321\green.png" />
+    <Content Include="cba321\Home\FeedBack.aspx" />
+    <Content Include="cba321\Home\Index.aspx" />
+    <Content Include="cba321\Hostel\HostelBooking.aspx" />
+    <Content Include="cba321\Hostel\HostelRequests.aspx" />
+    <Content Include="cba321\Hostel\RegisteredHostels.aspx" />
+    <Content Include="cba321\Login.aspx" />
+    <Content Include="cba321\Logout.aspx" />
+    <Content Include="cba321\Mess\MessBooking.aspx" />
+    <Content Include="cba321\Mess\MessRequests.aspx" />
+    <Content Include="cba321\Mess\RegisteredMess.aspx" />
+    <Content Include="cba321\Room\RegisteredRooms.aspx" />
+    <Content Include="cba321\Room\RoomBooking.aspx" />
+    <Content Include="cba321\Room\RoomRequests.aspx" />
+    <Content Include="cba321\StyleSheet.css" />
+    <Content Include="cba321\Tution\ConfirmTution.aspx" />
+    <Content Include="cba321\Tution\TutionList.aspx" />
+    <Content Include="cba321\Tution\TutionMail.aspx" />
+    <Content Include="cba321\Users.aspx" />
+    <Content Include="cba321\Welcome.aspx" />
+    <Content Include="FAQs.aspx" />
+    <Content Include="images\background\blue.jpg" />
+    <Content Include="images\bullet.png" />
+    <Content Include="images\chat.png" />
+    <Content Include="images\edit.png" />
+    <Content Include="images\FilledStar.gif" />
+    <Content Include="images\like.png" />
+    <Content Include="images\loader.gif" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logoname.png" />
+    <Content Include="images\name.png" />
+    <Content Include="images\sliderimages\Room.jpg" />
+    <Content Include="images\sliderimages\Shake.jpg" />
+    <Content Include="images\sliderimages\Students.jpg" />
+    <Content Include="images\Star.gif" />
+    <Content Include="images\WaitingStar.gif" />
+    <Content Include="Index.aspx" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\background\34.jpg" />
+    <Content Include="images\background\44.jpg" />
+    <Content Include="images\background\clk2.png" />
+    <Content Include="images\background\colorful.jpg" />
+    <Content Include="images\background\images.jpg" />
+    <Content Include="images\feedbackimages\Profile1.png" />
+    <Content Include="images\feedbackimages\Profile2.png" />
+    <Content Include="images\feedbackimages\Profile3.png" />
+    <Content Include="images\Female.JPG" />
+    <Content Include="images\Male.JPG" />
+    <Content Include="images\sliderimages\bg1.jpg" />
+    <Content Include="images\sliderimages\bg2.jpg" />
+    <Content Include="images\sliderimages\bg3.jpg" />
+    <Content Include="images\sliderimages\img1.png" />
+    <Content Include="images\sliderimages\img2.png" />
+    <Content Include="images\sliderimages\img3.png" />
+    <Content Include="images\sliderimages\left.gif" />
+    <Content Include="images\sliderimages\right.gif" />
+    <Content Include="Scripts\imageslider\bootstrap.min.js" />
+    <Content Include="Scripts\imageslider\html5shiv.js" />
+    <Content Include="Scripts\imageslider\jquery.isotope.min.js" />
+    <Content Include="Scripts\imageslider\jquery.js" />
+    <Content Include="Scripts\imageslider\jquery.prettyPhoto.js" />
+    <Content Include="Scripts\imageslider\main.js" />
+    <Content Include="Scripts\imageslider\respond.min.js" />
+    <Content Include="Scripts\imageslider\wow.min.js" />
+    <Content Include="Scripts\main\bootstrap.min.js" />
+    <Content Include="Scripts\main\jquery.backstretch.js" />
+    <Content Include="Scripts\main\jquery.js" />
+    <Content Include="Services\Blogs\Blog.aspx" />
+    <Content Include="Services\Blogs\BlogsList.aspx" />
+    <Content Include="Services\ChatRoom\AddUser.aspx" />
+    <Content Include="Services\ChatRoom\Chat.aspx" />
+    <Content Include="Services\ChatRoom\UserList.aspx" />
+    <Content Include="Services\Comments\Comments.aspx" />
+    <Content Include="Services\Comments\CommentTopic.aspx" />
+    <Content Include="Services\Comments\DeleteComment.aspx" />
+    <Content Include="Services\Comments\LikeComment.aspx" />
+    <Content Include="Services\Comments\MyViews.aspx" />
+    <Content Include="Services\Offers\Sample.aspx" />
+    <Content Include="Services\Room\Acknowledgement.aspx" />
+    <Content Include="Services\Room\BookMyRoom.aspx" />
+    <Content Include="Services\Room\CancelRoom.aspx" />
+    <Content Include="Services\Room\ConfirmRoom.aspx" />
+    <Content Include="Services\Room\DeleteRoomUser.aspx" />
+    <Content Include="Services\Flat\Acknowledgement.aspx" />
+    <Content Include="Services\Flat\BookMyFlat.aspx" />
+    <Content Include="Services\Flat\CancelFlat.aspx" />
+    <Content Include="Services\Flat\ConfirmFlat.aspx" />
+    <Content Include="Services\Flat\DeleteFlatUser.aspx" />
+    <Content Include="Services\Flat\FlatDetails.aspx" />
+    <Content Include="Services\Flat\SearchFlat.aspx" />
+    <Content Include="Services\Flat\UploadFlat.aspx" />
+    <Content Include="Services\Hostel\Acknowledgement.aspx" />
+    <Content Include="Services\Hostel\BookMyHostel.aspx" />
+    <Content Include="Services\Hostel\CancelHostel.aspx" />
+    <Content Include="Services\Hostel\ConfirmHostel.aspx" />
+    <Content Include="Services\Hostel\DeleteHostelUser.aspx" />
+    <Content Include="Services\Hostel\HostelDetails.aspx" />
+    <Content Include="Services\Hostel\SearchHostel.aspx" />
+    <Content Include="Services\Hostel\UploadHostel.aspx" />
+    <Content Include="Services\Mess\Acknowledgement.aspx" />
+    <Content Include="Services\Mess\BookMyMess.aspx" />
+    <Content Include="Services\Mess\CancelMess.aspx" />
+    <Content Include="Services\Mess\ConfirmMess.aspx" />
+    <Content Include="Services\Mess\DeleteMessUser.aspx" />
+    <Content Include="Services\Mess\MessDetails.aspx" />
+    <Content Include="Services\Mess\SearchMess.aspx" />
+    <Content Include="Services\Mess\UploadMess.aspx" />
+    <Content Include="Services\Room\RoomDetails.aspx" />
+    <Content Include="Services\Room\SearchRoom.aspx" />
+    <Content Include="Services\Room\UploadRoom.aspx" />
+    <Content Include="Services\Tutions\AddSubjects.aspx" />
+    <Content Include="Services\Tutions\AddToppers.aspx" />
+    <Content Include="Services\Tutions\Logout.aspx" />
+    <Content Include="Services\Tutions\TutionLogin.aspx" />
+    <Content Include="Services\Tutions\TutionPanel.aspx" />
+    <Content Include="Services\Tutions\ViewMyAdd.aspx" />
+    <Content Include="Services\Tution\BookMyTution.aspx" />
+    <Content Include="Services\Tution\SearchTution.aspx" />
+    <Content Include="Services\Tution\UploadTution.aspx" />
+    <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\feedbackslider\animate.min.css" />
+    <Content Include="Styles\feedbackslider\bootstrap.min.css" />
+    <Content Include="Styles\feedbackslider\font-awesome.css" />
+    <Content Include="Styles\feedbackslider\main.css" />
+    <Content Include="Styles\feedbackslider\responsive.css" />
+    <Content Include="Styles\feedbackslider\slicebox.css" />
+    <Content Include="Styles\font-awesome.css" />
+    <Content Include="Styles\font-awesome.min.css" />
+    <Content Include="Styles\imageslider\animate.min.css" />
+    <Content Include="Styles\imageslider\bootstrap.min.css" />
+    <Content Include="Styles\imageslider\font-awesome.css" />
+    <Content Include="Styles\imageslider\font-awesome.min.css" />
+    <Content Include="Styles\imageslider\main.css" />
+    <Content Include="Styles\imageslider\prettyPhoto.css" />
+    <Content Include="Styles\imageslider\responsive.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePhoto.aspx.cs">
+      <DependentUpon>ChangePhoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePhoto.aspx.designer.cs">
+      <DependentUpon>ChangePhoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangeSecurity.aspx.cs">
+      <DependentUpon>ChangeSecurity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangeSecurity.aspx.designer.cs">
+      <DependentUpon>ChangeSecurity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\MyUploads.aspx.cs">
+      <DependentUpon>MyUploads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\MyUploads.aspx.designer.cs">
+      <DependentUpon>MyUploads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Notifications.aspx.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Notifications.aspx.designer.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\PasswordSettings.aspx.cs">
+      <DependentUpon>PasswordSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\PasswordSettings.aspx.designer.cs">
+      <DependentUpon>PasswordSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\FeedBack.aspx.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\FeedBack.aspx.designer.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\UserPanel.aspx.cs">
+      <DependentUpon>UserPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\UserPanel.aspx.designer.cs">
+      <DependentUpon>UserPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\AddLocation.aspx.cs">
+      <DependentUpon>AddLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\AddLocation.aspx.designer.cs">
+      <DependentUpon>AddLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Blogs\BlogList.aspx.cs">
+      <DependentUpon>BlogList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Blogs\BlogList.aspx.designer.cs">
+      <DependentUpon>BlogList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Blogs\Blogs.aspx.cs">
+      <DependentUpon>Blogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Blogs\Blogs.aspx.designer.cs">
+      <DependentUpon>Blogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\cba322.Master.cs">
+      <DependentUpon>cba322.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\cba322.Master.designer.cs">
+      <DependentUpon>cba322.Master</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Comments.aspx.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Comments.aspx.designer.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Flat\FlatBooking.aspx.cs">
+      <DependentUpon>FlatBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Flat\FlatBooking.aspx.designer.cs">
+      <DependentUpon>FlatBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Flat\FlatRequests.aspx.cs">
+      <DependentUpon>FlatRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Flat\FlatRequests.aspx.designer.cs">
+      <DependentUpon>FlatRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Flat\RegisteredFlats.aspx.cs">
+      <DependentUpon>RegisteredFlats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Flat\RegisteredFlats.aspx.designer.cs">
+      <DependentUpon>RegisteredFlats.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Home\FeedBack.aspx.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Home\FeedBack.aspx.designer.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Home\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Home\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Hostel\HostelBooking.aspx.cs">
+      <DependentUpon>HostelBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Hostel\HostelBooking.aspx.designer.cs">
+      <DependentUpon>HostelBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Hostel\HostelRequests.aspx.cs">
+      <DependentUpon>HostelRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Hostel\HostelRequests.aspx.designer.cs">
+      <DependentUpon>HostelRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Hostel\RegisteredHostels.aspx.cs">
+      <DependentUpon>RegisteredHostels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Hostel\RegisteredHostels.aspx.designer.cs">
+      <DependentUpon>RegisteredHostels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Mess\MessBooking.aspx.cs">
+      <DependentUpon>MessBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Mess\MessBooking.aspx.designer.cs">
+      <DependentUpon>MessBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Mess\MessRequests.aspx.cs">
+      <DependentUpon>MessRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Mess\MessRequests.aspx.designer.cs">
+      <DependentUpon>MessRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Mess\RegisteredMess.aspx.cs">
+      <DependentUpon>RegisteredMess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Mess\RegisteredMess.aspx.designer.cs">
+      <DependentUpon>RegisteredMess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Room\RegisteredRooms.aspx.cs">
+      <DependentUpon>RegisteredRooms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Room\RegisteredRooms.aspx.designer.cs">
+      <DependentUpon>RegisteredRooms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Room\RoomBooking.aspx.cs">
+      <DependentUpon>RoomBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Room\RoomBooking.aspx.designer.cs">
+      <DependentUpon>RoomBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Room\RoomRequests.aspx.cs">
+      <DependentUpon>RoomRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Room\RoomRequests.aspx.designer.cs">
+      <DependentUpon>RoomRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Tution\ConfirmTution.aspx.cs">
+      <DependentUpon>ConfirmTution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Tution\ConfirmTution.aspx.designer.cs">
+      <DependentUpon>ConfirmTution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Tution\TutionList.aspx.cs">
+      <DependentUpon>TutionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Tution\TutionList.aspx.designer.cs">
+      <DependentUpon>TutionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Tution\TutionMail.aspx.cs">
+      <DependentUpon>TutionMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Tution\TutionMail.aspx.designer.cs">
+      <DependentUpon>TutionMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cba321\Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cba321\Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Password.cs" />
+    <Compile Include="FAQs.aspx.cs">
+      <DependentUpon>FAQs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQs.aspx.designer.cs">
+      <DependentUpon>FAQs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Blogs\Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Blogs\Blog.aspx.designer.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Blogs\BlogsList.aspx.cs">
+      <DependentUpon>BlogsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Blogs\BlogsList.aspx.designer.cs">
+      <DependentUpon>BlogsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ChatRoom\AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\ChatRoom\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ChatRoom\Chat.aspx.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\ChatRoom\Chat.aspx.designer.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ChatRoom\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\ChatRoom\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Comments\Comments.aspx.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Comments\Comments.aspx.designer.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Comments\CommentTopic.aspx.cs">
+      <DependentUpon>CommentTopic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Comments\CommentTopic.aspx.designer.cs">
+      <DependentUpon>CommentTopic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Comments\DeleteComment.aspx.cs">
+      <DependentUpon>DeleteComment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Comments\DeleteComment.aspx.designer.cs">
+      <DependentUpon>DeleteComment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Comments\LikeComment.aspx.cs">
+      <DependentUpon>LikeComment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Comments\LikeComment.aspx.designer.cs">
+      <DependentUpon>LikeComment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Comments\MyViews.aspx.cs">
+      <DependentUpon>MyViews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Comments\MyViews.aspx.designer.cs">
+      <DependentUpon>MyViews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Offers\Sample.aspx.cs">
+      <DependentUpon>Sample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Offers\Sample.aspx.designer.cs">
+      <DependentUpon>Sample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Room\Acknowledgement.aspx.cs">
+      <DependentUpon>Acknowledgement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Room\Acknowledgement.aspx.designer.cs">
+      <DependentUpon>Acknowledgement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Room\BookMyRoom.aspx.cs">
+      <DependentUpon>BookMyRoom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Room\BookMyRoom.aspx.designer.cs">
+      <DependentUpon>BookMyRoom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Room\CancelRoom.aspx.cs">
+      <DependentUpon>CancelRoom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Room\CancelRoom.aspx.designer.cs">
+      <DependentUpon>CancelRoom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Room\ConfirmRoom.aspx.cs">
+      <DependentUpon>ConfirmRoom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Room\ConfirmRoom.aspx.designer.cs">
+      <DependentUpon>ConfirmRoom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Room\DeleteRoomUser.aspx.cs">
+      <DependentUpon>DeleteRoomUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Room\DeleteRoomUser.aspx.designer.cs">
+      <DependentUpon>DeleteRoomUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Flat\Acknowledgement.aspx.cs">
+      <DependentUpon>Acknowledgement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Flat\Acknowledgement.aspx.designer.cs">
+      <DependentUpon>Acknowledgement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Flat\BookMyFlat.aspx.cs">
+      <DependentUpon>BookMyFlat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Flat\BookMyFlat.aspx.designer.cs">
+      <DependentUpon>BookMyFlat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Flat\CancelFlat.aspx.cs">
+      <DependentUpon>CancelFlat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Flat\CancelFlat.aspx.designer.cs">
+      <DependentUpon>CancelFlat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Flat\ConfirmFlat.aspx.cs">
+      <DependentUpon>ConfirmFlat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Flat\ConfirmFlat.aspx.designer.cs">
+      <DependentUpon>ConfirmFlat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Flat\DeleteFlatUser.aspx.cs">
+      <DependentUpon>DeleteFlatUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Flat\DeleteFlatUser.aspx.designer.cs">
+      <DependentUpon>DeleteFlatUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Flat\FlatDetails.aspx.cs">
+      <DependentUpon>FlatDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Flat\FlatDetails.aspx.designer.cs">
+      <DependentUpon>FlatDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Flat\SearchFlat.aspx.cs">
+      <DependentUpon>SearchFlat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Flat\SearchFlat.aspx.designer.cs">
+      <DependentUpon>SearchFlat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Flat\UploadFlat.aspx.cs">
+      <DependentUpon>UploadFlat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Flat\UploadFlat.aspx.designer.cs">
+      <DependentUpon>UploadFlat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Hostel\Acknowledgement.aspx.cs">
+      <DependentUpon>Acknowledgement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Hostel\Acknowledgement.aspx.designer.cs">
+      <DependentUpon>Acknowledgement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Hostel\BookMyHostel.aspx.cs">
+      <DependentUpon>BookMyHostel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Hostel\BookMyHostel.aspx.designer.cs">
+      <DependentUpon>BookMyHostel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Hostel\CancelHostel.aspx.cs">
+      <DependentUpon>CancelHostel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Hostel\CancelHostel.aspx.designer.cs">
+      <DependentUpon>CancelHostel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Hostel\ConfirmHostel.aspx.cs">
+      <DependentUpon>ConfirmHostel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Hostel\ConfirmHostel.aspx.designer.cs">
+      <DependentUpon>ConfirmHostel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Hostel\DeleteHostelUser.aspx.cs">
+      <DependentUpon>DeleteHostelUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Hostel\DeleteHostelUser.aspx.designer.cs">
+      <DependentUpon>DeleteHostelUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Hostel\HostelDetails.aspx.cs">
+      <DependentUpon>HostelDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Hostel\HostelDetails.aspx.designer.cs">
+      <DependentUpon>HostelDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Hostel\SearchHostel.aspx.cs">
+      <DependentUpon>SearchHostel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Hostel\SearchHostel.aspx.designer.cs">
+      <DependentUpon>SearchHostel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Hostel\UploadHostel.aspx.cs">
+      <DependentUpon>UploadHostel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Hostel\UploadHostel.aspx.designer.cs">
+      <DependentUpon>UploadHostel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Mess\Acknowledgement.aspx.cs">
+      <DependentUpon>Acknowledgement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Mess\Acknowledgement.aspx.designer.cs">
+      <DependentUpon>Acknowledgement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Mess\BookMyMess.aspx.cs">
+      <DependentUpon>BookMyMess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Mess\BookMyMess.aspx.designer.cs">
+      <DependentUpon>BookMyMess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Mess\CancelMess.aspx.cs">
+      <DependentUpon>CancelMess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Mess\CancelMess.aspx.designer.cs">
+      <DependentUpon>CancelMess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Mess\ConfirmMess.aspx.cs">
+      <DependentUpon>ConfirmMess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Mess\ConfirmMess.aspx.designer.cs">
+      <DependentUpon>ConfirmMess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Mess\DeleteMessUser.aspx.cs">
+      <DependentUpon>DeleteMessUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Mess\DeleteMessUser.aspx.designer.cs">
+      <DependentUpon>DeleteMessUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Mess\MessDetails.aspx.cs">
+      <DependentUpon>MessDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Mess\MessDetails.aspx.designer.cs">
+      <DependentUpon>MessDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Mess\SearchMess.aspx.cs">
+      <DependentUpon>SearchMess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Mess\SearchMess.aspx.designer.cs">
+      <DependentUpon>SearchMess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Mess\UploadMess.aspx.cs">
+      <DependentUpon>UploadMess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Mess\UploadMess.aspx.designer.cs">
+      <DependentUpon>UploadMess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Room\RoomDetails.aspx.cs">
+      <DependentUpon>RoomDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Room\RoomDetails.aspx.designer.cs">
+      <DependentUpon>RoomDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Room\SearchRoom.aspx.cs">
+      <DependentUpon>SearchRoom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Room\SearchRoom.aspx.designer.cs">
+      <DependentUpon>SearchRoom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Room\UploadRoom.aspx.cs">
+      <DependentUpon>UploadRoom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Room\UploadRoom.aspx.designer.cs">
+      <DependentUpon>UploadRoom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Tutions\AddSubjects.aspx.cs">
+      <DependentUpon>AddSubjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Tutions\AddSubjects.aspx.designer.cs">
+      <DependentUpon>AddSubjects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Tutions\AddToppers.aspx.cs">
+      <DependentUpon>AddToppers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Tutions\AddToppers.aspx.designer.cs">
+      <DependentUpon>AddToppers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Tutions\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Tutions\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Tutions\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Tutions\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Tutions\TutionLogin.aspx.cs">
+      <DependentUpon>TutionLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Tutions\TutionLogin.aspx.designer.cs">
+      <DependentUpon>TutionLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Tutions\TutionPanel.aspx.cs">
+      <DependentUpon>TutionPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Tutions\TutionPanel.aspx.designer.cs">
+      <DependentUpon>TutionPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Tutions\ViewMyAdd.aspx.cs">
+      <DependentUpon>ViewMyAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Tutions\ViewMyAdd.aspx.designer.cs">
+      <DependentUpon>ViewMyAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Tution\BookMyTution.aspx.cs">
+      <DependentUpon>BookMyTution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Tution\BookMyTution.aspx.designer.cs">
+      <DependentUpon>BookMyTution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Tution\SearchTution.aspx.cs">
+      <DependentUpon>SearchTution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Tution\SearchTution.aspx.designer.cs">
+      <DependentUpon>SearchTution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Tution\UploadTution.aspx.cs">
+      <DependentUpon>UploadTution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Tution\UploadTution.aspx.designer.cs">
+      <DependentUpon>UploadTution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="cba321\Blogs\BlogImage\" />
+    <Folder Include="cba321\Home\Adds\" />
+    <Folder Include="images\Flat\" />
+    <Folder Include="images\Hostel\" />
+    <Folder Include="images\Mess\" />
+    <Folder Include="images\ProfilePhotos\" />
+    <Folder Include="images\Room\" />
+    <Folder Include="images\Tution\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cba321\cba322.Master" />
+    <None Include="bin\itextsharp.dll.refresh" />
+    <None Include="fonts\fontawesome-webfont.eot" />
+    <None Include="fonts\fontawesome-webfont.ttf" />
+    <None Include="fonts\fontawesome-webfont.woff" />
+    <None Include="fonts\FontAwesome.otf" />
+    <None Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Services\Tutions\Site1.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1566</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
